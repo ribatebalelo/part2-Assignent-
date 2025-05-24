@@ -46,7 +46,7 @@ public class ChatAppTest {
         ResultSet rs = loginStmt.executeQuery();
         assertTrue("Login should succeed for inserted user", rs.next());
 
-        // Check that the retrieved data matches
+       
         assertEquals(username, rs.getString("username"));
         assertEquals(password, rs.getString("password"));
         assertEquals(phone, rs.getString("phone"));
@@ -54,7 +54,7 @@ public class ChatAppTest {
 
     @After
     public void tearDown() throws Exception {
-        // Clean up test user after test
+      
         PreparedStatement stmt = conn.prepareStatement("DELETE FROM users WHERE username = ?");
         stmt.setString(1, "test_");
         stmt.executeUpdate();
