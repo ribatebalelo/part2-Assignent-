@@ -118,7 +118,7 @@ class DashboardFrame extends JFrame {
 
         JButton sendMsgBtn = new JButton("Send Message");
         JButton checkMsgBtn = new JButton("Check Recently Sent Messages");
-        JButton quickBtn = new JButton("Quick");
+        JButton quickBtn = new JButton("Quit");
 
         sendMsgBtn.setBackground(Color.BLUE);
         sendMsgBtn.setForeground(Color.WHITE);
